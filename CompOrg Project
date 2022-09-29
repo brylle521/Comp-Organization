@@ -1,1 +1,20 @@
-
+import java.util.Scanner;
+public class number{
+    public static void main(String args[]){
+        Scanner scan =new Scanner(System.in);
+        System.out.println("Basic Converter \n [1] Binary Converter \n [2] Octal Converter \n [3] HexaDecimal Converter \n");
+        String in = scan.next();
+        switch (in){
+            case "1": 
+                System.out.println("Enter number to be converted");
+                System.out.println(Get_binary(scan.nextFloat()));
+                break;
+            case "2":System.out.println("Enter number to be converted");
+                System.out.println(Get_Octal(scan.nextFloat()));
+                break;
+            case "3":System.out.println("Enter number to be converted");
+                System.out.println(Get_Hexadecimal(scan.nextFloat()));
+                break;
+            default: ;break;
+        }
+    }
