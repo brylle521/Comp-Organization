@@ -1,0 +1,8 @@
+public static boolean is_Decimal(float num){
+     String number = Float.toString(num);
+
+         if ((num % 1)!= 0){
+             return true;
+             }
+     return false;       
+    }
